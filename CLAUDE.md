@@ -10,15 +10,6 @@ Arcade Vault is an online platform for playing games and competing for the highe
 
 The codebase is currently a fresh `create-next-app` scaffold. `app/page.tsx` and the metadata in `app/layout.tsx` are still placeholders.
 
-## Commands
-
-```bash
-npm run dev     # start dev server (also regenerates the AGENTS.md block)
-npm run build   # production build (includes type checking)
-npm run start   # serve the production build
-npm run lint    # ESLint 9 flat config (next core-web-vitals + typescript)
-```
-
 No test runner is configured yet.
 
 ## Stack and conventions
@@ -27,3 +18,6 @@ No test runner is configured yet.
 - Route props use the global generated types, e.g. `LayoutProps<"/">` / `PageProps<"/route">`, instead of hand-written prop interfaces. They are generated into `.next/types`, so run `dev` or `build` first if they are missing.
 - **Tailwind CSS v4** via `@tailwindcss/postcss`. There is no `tailwind.config.*`: theme tokens live in `app/globals.css` under `@theme inline`, mapped from CSS variables (`--background`, `--foreground`, Geist font vars). Dark mode uses `prefers-color-scheme`.
 - TypeScript strict mode; the import alias `@/*` maps to the repo root.
+
+## Skills
+Usa siempre /frontend-design, cuando requieras hacer diseños HTML.
